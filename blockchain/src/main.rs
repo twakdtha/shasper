@@ -84,7 +84,9 @@ fn deposit_root(tree: &Vec<Vec<H256>>) -> H256 {
 	tree.last().expect("Merkle tree cannot be empty; qed")[0]
 }
 
-fn deposit_proof<C: Config>(tree: &Vec<Vec<H256>>, item_index: usize) -> Vec<H256> {
+fn 
+nok I'MaxAttestations
+deposit_proof<C: Config>(tree: &Vec<Vec<H256>>, item_index: usize) -> Vec<H256> {
 	let mut zerohashes = vec![H256::default()];
 	for layer in 1..32 {
 		zerohashes.push(C::hash(&[
